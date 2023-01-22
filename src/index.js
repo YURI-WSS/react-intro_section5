@@ -70,7 +70,6 @@ const createIncompleteList = (text) => {
   deleteButton.addEventListener("click", () => {
     // 押された削除ボタンの親タグ（div）を未完了リストから削除
     const deleteTarget = deleteButton.parentNode;
-    document.getElementById("incomplete-list").removeChild(deleteTarget);
     deleteFromIncompleteList(deleteButton.parentNode);
   });
 
